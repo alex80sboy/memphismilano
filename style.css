@@ -1,0 +1,163 @@
+*{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mobile-menu{
+  box-sizing: border-box;
+  background: black;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+}
+
+.mobile-menu a{
+  color: yellow;
+  text-decoration: none;
+}
+
+.mobile-menu ul{
+  position: absolute;
+  right: -50%;
+  top: 50px;
+  height:100vh;
+  background: yellow;
+  list-style-type: none;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile-menu ul li a{
+  color: black;
+}
+.mobile-menu ul li a:hover{
+  border-bottom: 2px solid white;
+}
+
+.desktop-menu{
+  display: none;
+  font-size: 21px;
+  background: blue;
+  height: 50px;
+}
+
+.desktop-menu ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.desktop-menu ul li{
+  margin: 0 10px;
+}
+
+.desktop-menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu ul li a:hover{
+  border-bottom: yellow 3px solid;
+}
+p{
+  font-size: 21px;
+  padding-top:0;
+  margin: 10px;
+}
+
+h1{
+  margin: 10px;
+}
+h2{
+  margin: 10px;
+}
+.fixed-background{
+  display: block;
+  background:url('https://cdn.mos.cms.futurecdn.net/F8cC9DYXZTVdQWFcV7ggzV.jpg') center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+.fixed-background p{
+  margin: 0;
+  color: white;
+    display: flex;
+  justify-content: center;
+  padding-top: 450px;
+font-size: 40px;
+font-weight: bold;
+}
+ol{
+  list-style-type: none;
+  display: flex; 
+}
+ol li img{
+  height: 400px;
+  margin: 10px;
+   padding-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip span {
+  display:none;
+}
+.tooltip span img {
+  float:left;
+}
+.tooltip:hover span {
+  display:block;
+  position:absolute;
+  overflow:hidden;
+}
+
+.wrapper {
+  position: relative;
+  padding: 0;
+  width:100px;
+  display:block;
+}
+.text {
+  position: absolute;
+  top: 0;
+  color:#f00;
+  background-color:rgba(255,255,255,0.8);
+  width: 300px;
+  height: 300px;
+  line-height:100px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.text:hover {
+  opacity:1;
+}
+
+
+img {
+  z-index:1;
+  height: 300px;
+}
+
+
+@media screen and (min-width: 768px){
+  .mobile-menu{
+    display: none;
+  }
+  .desktop-menu{
+    display: block;
+  }
+}
